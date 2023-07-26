@@ -1,0 +1,63 @@
+/*function App()
+{
+  const myobj={
+                 rno:1001,
+                 sname:"samy",
+                 sub:"maths",
+                 mark:100
+  }
+  return(
+    <>
+    <h1>roll no:{myobj.rno}</h1>
+    <h1>student name:{myobj.sname}</h1>
+    <h1>subject:{myobj.sub}</h1>
+    <h1>student mark:{myobj.mark}</h1>
+    </>
+  )
+} export default App
+*/
+/*function App(){
+  const myobj={
+                rno:1001,
+                sname:"samy",
+                mark:{tamil:183,
+                english:200,
+                maths:178,
+                science:182,
+                social:200
+        }     
+  }
+  return(
+         <>
+         <h1>roll no:{myobj.rno}</h1>
+         <h1>student name:{myobj.sname}</h1>
+         <h1>student tamil mark:{myobj.mark.tamil}</h1>
+         <h1>student tamil mark:{myobj.mark.english}</h1>
+         <h1>student tamil mark:{myobj.mark.maths}</h1>
+         <h1>student tamil mark:{myobj.mark.science}</h1>
+         <h1>student tamil mark:{myobj.mark.social}</h1>
+         </>
+  )
+}export default App
+-------------------------------------------------------------------------------
+
+/*function App(){
+  const myobj={
+                rno:1001,
+                sname:"samy",
+                mark:[36,74,72,46,82]
+        }     
+  
+  return(
+         <>
+         <h1>roll no:{myobj.rno}</h1>
+         <h1>student name:{myobj.sname}</h1>
+         <h1>student tamil mark:{myobj.mark[0]}</h1>
+         <h1>student eng mark:{myobj.mark[1]}</h1>
+         <h1>student maths mark:{myobj.mark[2]}</h1>
+         <h1>student science mark:{myobj.mark[3]}</h1>
+         <h1>student social science mark:{myobj.mark[4]}</h1>
+         </>
+  )
+  }
+  export default App
