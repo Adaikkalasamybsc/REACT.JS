@@ -1,0 +1,80 @@
+/*import React from "react"
+class App extends React.Component
+{
+   render()
+   {
+    this.state={rno:1002,
+                name:"raja",
+              mark:100}
+          return(
+            <>
+            <h1>test</h1>
+            <h2>{this.state.rno}</h2>
+            <h2>{this.state.name}</h2>
+            <h2>{this.state.mark}</h2>
+            </>
+          )    
+   }
+} export default App
+*/
+----------------------------------------------------------------------------------
+/* import React from "react"
+  class App extends React.Component
+  {
+    render()
+    {
+      this.state= { id:101,
+                    name:"pavi",
+                    age:25
+                  }
+        return(
+          <div>
+          <h1>student id:{this.state.id}</h1>
+          <h1>student name:{this.state.name}</h1>
+          <h1>student age:{this.state.age}</h1>
+          </div>
+        )          
+    }
+
+  } export default App
+ */
+------------------------------------------------------------
+/*
+
+function App(props)
+{
+  return(
+    <>
+    <h1>number one:{props.n1}</h1>
+    <h1>number two:{props.n2}</h1>
+    <h1>number three:{props.n3}</h1>
+    <h1>total:{parseInt(props.n1)+parseInt(props.n2)+parseInt(props.n3)}</h1>
+    <h1>total:{parseInt(props.n1)*parseInt(props.n2)*parseInt(props.n3)}</h1>
+    </>
+  )
+} export default App
+*/
+/*
+import React from 'react'
+class App extends React.Component
+{
+  constructor(props)
+  {
+    super()
+  }
+
+  render()
+  {
+    return(
+      <>
+      <h1>no 1:{this.props.n1}</h1>
+      <h1>no 2:{this.props.n2}</h1>
+      <h1>no 3:{this.props.n3}</h1>
+      <h1>tot:{parseInt(this.props.n1)+parseInt(this.props.n2)+parseInt(this.props.n3)}</h1>
+      </>
+    
+    )
+  }
+
+} export default App
+*/
