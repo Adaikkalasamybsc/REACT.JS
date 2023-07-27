@@ -1,0 +1,113 @@
+function App(){
+   const show=(k)=>{
+    document.getElementById("res").innerHTML="event type:"+k.type
+   }
+  return(
+    <>
+    <h1><center><u>react event object</u></center></h1>
+    <button onClick={(event)=>show(event)}>click me</button>
+    
+    <div id="res"></div>
+    </>
+  )
+} export default App
+*/
+--------------------------------------------------------------------------
+/*
+function App(){
+   const show=(k)=>{
+    k.preventDefault();  // don't refresh
+    document.getElementById("res").innerHTML="event type:"+k.type
+   }
+  return(
+    <form>
+    <h1><center><u>react event object</u></center></h1>
+    <input type="submit" onClick={(event)=>show(event)}>click me</input>
+    
+    <div id="res"></div>
+    </form>
+  )
+} export default App
+*/
+----------------------------------------------------------------------------------------------------------
+/*
+function App(){
+
+  const dis=(s)=>{
+  document.getElementById("res").innerHTML="event value:"+s
+  }
+   const show=(k)=>{
+    k.preventDfault();
+    document.getElementById("res1").innerHTML="event value:"+k.type
+   }
+  return(
+    <>
+    Edit:<input type="text" onChange={(event)=>dis(event.target.value)}></input>
+    <input type="submit" onClick={(event)=>show(event)}>click me</input>
+    <div id="res"></div>
+    <div id="res1"></div>
+    </>
+  )
+}export default App
+*/
+----------------------------------------------------------------------------------------------------
+/*
+function App(){
+  const dis=()=>{
+    document.getElementById("res").innerHTML="event focus or cursor inside"
+  }
+  consst dis3=()=>{
+    document.getElementById("res1").innerHTML="event focus or cursor outside"
+  }
+  return(
+      <>
+      <input type=" submit" onFocus={(event)=>dis(event)} onBlur={dis3}></input>
+      <div id="res"></div>
+      <div id="res1"></div>
+      </>
+  )
+} export default App
+*/
+----------------------------------------------------------------------------------------------------
+/*
+ function App(){
+     const dis=(t)=>{
+      
+     document.getElementById("d2").innerHTML="value:"+t    
+     }
+   const show=(k)=>{document.getElementById("di").innerHTML= "event type:"+k.type} 
+  const dis1=(l)=>{document.getElementById("d3").innerHTML="fofus or inside"+l}
+  const dis2=(l)=>{document.getElementById("d4").innerHTML="onblur or outside"+l}
+   return(
+    <>
+    <h1>event passing</h1>
+    <button onClick={(event)=>show(event)}>click me</button>
+    <input type="text" onChange={(event)=>dis(event.target.value)}></input>
+    <input type="text" onFocus={(event)=>dis1(event.target.value)} onblur={dis2}></input>
+    <div id="di"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    </>
+   )
+ }export default App
+*/
+--------------------------------------------------------------------------------------------------------------------
+/*
+function App(){
+  const dis=(event)=>{
+    event.preventDefault()
+   var data=document.getElementById("t1").value;
+    document.getElementById("res").innerHTML= "value:"+data
+  }
+  return(
+    <form onSubmit={dis}>
+      <h1>form onsubmiting</h1>
+      <input type="text" id="t1"></input>
+      <input type="submit" value="click me submit-buttton"></input>
+      <button>normal button</button>
+      <div id="res"></div>
+    </form>
+  )
+} export default App
+*/
