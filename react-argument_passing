@@ -1,0 +1,40 @@
+function App(){
+   const show=(t)=>{alert("arg 1 vavue"+t)}
+   return(
+    <div>
+    <h1><center><u>passing argument</u></center></h1>
+      <button onClick={()=>{show("testing")}}>click me</button>
+    </div>
+   )
+} export default App  
+*/
+/*
+ function App(){
+  const show=(t1,t2)=>{
+    var res=t1+t2
+    alert("total"+res)
+    document.getElementById("res").innerHTML="total:"+res
+  }
+   return(
+    <div>
+      <button onClick={()=>{show(11,22)}} >click me</button>
+      <div id="res"></div>
+    </div>
+   )
+ } export default App
+ */
+/*
+function App(){
+   const show=(k)=>{
+    document.getElementById("res").innerHTML="event type:"+k.type
+   }
+  return(
+    <>
+    <h1><center><u>react event object</u></center></h1>
+    <button onClick={(event)=>show(event)}>click me</button>
+    
+    <div id="res"></div>
+    </>
+  )
+} export default App
+*/
